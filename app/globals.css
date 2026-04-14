@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-	--background: #0b1020;
+	--background: #0a0a0a;
 	--foreground: #e5e7eb;
-	--muted: #94a3b8;
+	--muted: #a1a1aa;
 	--border: rgba(148, 163, 184, 0.2);
 }
 

@@ -157,7 +157,51 @@ export default function Home() {
 
 			<section id="additional-work" aria-labelledby="additional-work-heading">
 				<div className="mx-auto max-w-6xl px-6 py-20">
-					<h2 id="additional-work-heading">Additional Work</h2>
+					<div className="max-w-4xl space-y-12">
+						<div className="space-y-3">
+							<p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+								Additional Work
+							</p>
+							<h2 id="additional-work-heading" className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+								Supporting systems and implementation work across enterprise security tooling.
+							</h2>
+						</div>
+
+						<div className="space-y-6">
+							<article className="rounded-xl border border-border bg-white/3 px-5 py-6">
+								<div className="space-y-2">
+									<h3 className="text-lg font-semibold text-foreground">
+										DNS Forwarding Proxy (Infoblox)
+									</h3>
+									<p className="text-base leading-8 text-muted">
+										Built and supported forwarding workflows around Infoblox-connected DNS infrastructure to fit operational and network contrstraints.
+									</p>
+								</div>
+							</article>
+
+							<article className="rounded-xl border border-border bg-white/3 px-5 py-6">
+								<div className="space-y-2">
+									<h3 className="text-lg font-semibold text-foreground">
+										Bindplane telemetry pipeline
+									</h3>
+									<p className="text-base leading-8 text-muted">
+										Implemented telemetry collection and routing patterns to improve visibility and operational signal handling.
+									</p>
+								</div>
+							</article>
+
+							<article className="rounded-xl border border-border bg-white/3 px-5 py-6">
+								<div className="space-y-2">
+									<h3 className="text-lg font-semibold text-foreground">
+										Delinea RDP implementation
+									</h3>
+									<p className="text-base leading-8 text-muted">
+										Worked on controlled remote access implementaion using Delinea to align acces patterns with enterprise security requirements.
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
 				</div>
 			</section>
 

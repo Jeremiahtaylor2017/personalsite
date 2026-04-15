@@ -37,7 +37,58 @@ export default function Home() {
 
 			<section id="experience" aria-labelledby="experience-heading">
 				<div className="mx-auto max-w-6xl px-6 py-20">
-					<h2 id="experience-heading">Experience</h2>
+					<div className="max-w-4xl space-y-12">
+						<div className="space-y-3">
+							<p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+								Experience
+							</p>
+							<h2 id="experience-heading" className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+								Enterprise security work across infrastructure, operations, and platform systems.
+							</h2>
+						</div>
+
+						<div className="space-y-8">
+							<article className="space-y-4">
+								<div className="space-y-2">
+									<div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+										<h3 className="text-xl font-semibold text-foreground">
+											Security Engineer - Williams-Sonoma
+										</h3>
+										<p className="text-sm text-muted">July 2024 - Present</p>
+									</div>
+									<p className="text-sm uppercase tracking-[0.14em] text-muted">
+										Infrastructure | Platform | Enterprise Scale
+									</p>
+								</div>
+
+								<ul className="space-y-3 text-base leading-8 text-muted">
+									<li>Own and maintain enterprise security platforms at scale.</li>
+									<li>Support 20,000+ endpoints and approximately 6,500 servers.</li>
+									<li>Focus on infrastructure reliability, systems design, and operational resilience.</li>
+								</ul>
+							</article>
+
+							<article className="space-y-4">
+								<div className="space-y-2">
+									<div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+										<h3 className="text-xl font-semibold text-forground">
+											Security Analyst - Five Star Bank
+										</h3>
+										<p className="text-sm text-muted">May 2022 - July 2024</p>
+									</div>
+									<p className="text-sm uppercase tracking-[0.14em] text-muted">
+										Security Operations | Risk Reduction
+									</p>
+								</div>
+
+								<ul className="space-y-3 text-base leading-8 text-muted">
+									<li>Worked across security operations and day-to-day defensive workflows.</li>
+									<li>Led vulnerability management efforts and supported audit readiness.</li>
+									<li>Focused on practical risk reduction across the environment.</li>
+								</ul>
+							</article>
+						</div>
+					</div>
 				</div>
 			</section>
 

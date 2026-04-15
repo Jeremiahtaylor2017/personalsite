@@ -57,7 +57,7 @@ export default function Home() {
 										<p className="text-sm text-muted">July 2024 - Present</p>
 									</div>
 									<p className="text-sm uppercase tracking-[0.14em] text-muted">
-										Infrastructure | Platform | Enterprise Scale
+										Infrastructure &middot; Platform &middot; Enterprise Scale
 									</p>
 								</div>
 
@@ -77,7 +77,7 @@ export default function Home() {
 										<p className="text-sm text-muted">May 2022 - July 2024</p>
 									</div>
 									<p className="text-sm uppercase tracking-[0.14em] text-muted">
-										Security Operations | Risk Reduction
+										Security Operations &middot; Risk Reduction
 									</p>
 								</div>
 
@@ -94,7 +94,64 @@ export default function Home() {
 
 			<section id="featured-project" aria-labelledby="featured-project-heading">
 				<div className="mx-auto max-w-6xl px-6 py-20">
-					<h2 id="featured-project-heading">Featured Project</h2>
+					<div className="max-w-4xl space-y-12">
+						<div className="space-y-3">
+							<p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+								Featured Project
+							</p>
+							<h2 id="featured-project-heading" className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+								PCI-Oriented Orchestration Platform
+							</h2>
+							<p className="max-w-3xl text-base leading-8 text-muted sm:text-lg">
+								A controller and agent system designed for restricted PCI environments where inbound access is not an option.
+							</p>
+						</div>
+
+						<div className="grid gap-6">
+							<article className="space-y-3">
+								<h3 className="text-lg font-semibold text-foreground">Problem</h3>
+								<p className="text-base leading-8 text-muted">
+									PCI environments commonly restrict inbound connectivity, which makes traditional remote orchestration and operational access patterns difficult or impossible to use safely.
+								</p>
+							</article>
+
+							<article className="space-y-3">
+								<h3 className="text-lg font-semibold text-foreground">Solution</h3>
+								<p className="text-base leading-8 text-muted">
+									Built an outbound-only orchestraion model using a controller and agent architecture, allowing centralized job coordination without requiring inbound exposure into restricted network segments.
+								</p>
+							</article>
+
+							<article className="space-y-3">
+								<h3 className="text-lg font-semibold text-foreground">Key Features</h3>
+								<ul className="space-y-3 text-base leading-8 text-muted">
+									<li>CLI + controller + agent architecture.</li>
+									<li>SSH-based execution for operational workflows.</li>
+									<li>Centralized job management across constrained environments.</li>
+								</ul>
+							</article>
+
+							<article className="space-y-4">
+								<h3 className="text-lg font-semibold text-foreground">Architecture</h3>
+								<div className="rounded-xl border border-border bg-white/3 px-5 py-6">
+									<p className="text-sm uppercase tracking-[0.18em] text-muted">
+										CLI {"->"} Controller {"->"} Engine (PCI) {"->"} Targets
+									</p>
+								</div>
+							</article>
+
+							<div>
+								<a
+									href="https://github.com/Jeremiahtaylor2017/orchestration_engine"
+									target="_blank"
+									rel="noreferrer"
+									className="inline-flex items-center justify-center rounded-md border border-border px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-foreground"
+								>
+									View Project on GitHub
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 

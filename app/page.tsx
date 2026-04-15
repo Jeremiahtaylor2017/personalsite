@@ -207,7 +207,62 @@ export default function Home() {
 
 			<section id="how-i-think" aria-labelledby="how-i-think-heading">
 				<div className="mx-auto max-w-6xl px-6 py-20">
-					<h2 id="how-i-think-heading">How I Think</h2>
+					<div className="max-w-4xl space-y-12">
+						<div className="space-y-3">
+							<p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+								How I Think
+							</p>
+							<h2 id="how-i-think-heading" className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+								I prefer secure, practical systems that hold up under real operational constraints.
+							</h2>
+						</div>
+
+						<div className="grid gap-6 sm:grid-cols-2">
+							<article className="rounded-xl border border-border bg-white/3 px-5 py-6">
+								<div className="space-y-2">
+									<h3 className="text-lg font-semibold text-foreground">
+										Secure design in constrained environments
+									</h3>
+									<p className="text-base leading-8 text-muted">
+										I design around the actual operating environment, especially when access is limited, networks are segmented, or security controls are non-negotiable.
+									</p>
+								</div>
+							</article>
+
+							<article className="rounded-xl border border-border bg-white/3 px-5 py-6">
+								<div className="space-y-2">
+									<h3 className="text-lg font-semibold text-foreground">
+										Reduce attack surface first
+									</h3>
+									<p className="text-base leading-8 text-muted">
+										I prefer designs that remove exposure, reduce moving parts, and make failure modes easier to reason about.
+									</p>
+								</div>
+							</article>
+
+							<article className="rounded-xl border border-border bg-white/3 px-5 py-6">
+								<div className="space-y-2">
+									<h3 className="text-lg font-semibold text-foreground">
+										Build simple, reliable systems
+									</h3>
+									<p className="text-base leading-8 text-muted">
+										The best systems are usually the ones operators can understand, support, and trust under pressure.
+									</p>
+								</div>
+							</article>
+
+							<article className="rounded-xl border border-border bg-white/3 px-5 py-6">
+								<div className="space-y-2">
+									<h3 className="text-lg font-semibold text-foreground">
+										Choose practical solutions over unnecessary complexity
+									</h3>
+									<p className="text-base leading-8 text-muted">
+										I value systems that solve the problem cleanly and hold up in production more than solutions that are clever but expensive to maintain.
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
 				</div>
 			</section>
 

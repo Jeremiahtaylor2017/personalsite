@@ -268,7 +268,53 @@ export default function Home() {
 
 			<section id="contact" aria-labelledby="contact-heading">
 				<div className="mx-auto max-w-6xl px-6 py-20">
-					<h2 id="contact-heading">Contact</h2>
+					<div className="max-w-4xl space-y-10">
+						<div className="space-y-3">
+							<p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+								Contact
+							</p>
+							<h2 id="contact-heading" className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+								Get in touch.
+							</h2>
+							<p className="max-w-2xl text-base leading-8 text-muted sm:text-lg">
+								If you want to talk about security engineering, infrastructure, or platform work, the easiest way to reach me is through the links below.
+							</p>
+						</div>
+
+						<div className="grid gap-4 sm:grid-cols-3">
+							<a href="malto:jeremiahtaylor2021@gmail.com" className="rounded-xl border border-border bg-white/3 px-5 py-6 transition-colors hover:border-foreground"
+							>
+								<div className="space-y-2">
+									<p className="text-sm uppercase tracking-[0.14em] text-muted">Email</p>
+									<p className="text-base font-medium text-foreground">jeremiahtaylor2021@gmail.com</p>
+								</div>
+							</a>
+
+							<a
+								href="https://www.linkedin.com/in/jeremiahtaylor2017"
+								target="_blank"
+								rel="noreferrer"
+								className="rounded-xl border border-border bg-white/3 px-5 py-6 transition-colors hover:border-foreground"
+							>
+								<div className="space-y-2">
+									<p className="text-sm uppercase tracking-[0.14em] text-muted">LinkedIn</p>
+									<p className="text-base font-medium text-foreground">View profile</p>
+								</div>
+							</a>
+
+							<a
+								href="https://github.com/jeremiahtaylor2017"
+								target="_blank"
+								rel="noreferrer"
+								className="rounded-xl border border-border bg-white/3 px-5 py-6 transition-colors hover:border-foreground"
+							>
+								<div className="space-y-2">
+									<p className="text-sm uppercase tracking-[0.14em] text-muted">GitHub</p>
+									<p className="text-base font-medium text-foreground">Jeremiahtaylor2017</p>
+								</div>
+							</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>

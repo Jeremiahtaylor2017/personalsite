@@ -1,33 +1,41 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const syne = Syne({
+	variable: "--font-display",
+	subsets: ["latin"],
+	weight: ["400", "500", "600", "700", "800"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const dmSans = DM_Sans({
+	variable: "--font-body",
+	subsets: ["latin"],
+	weight: ["300", "400", "500"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+	variable: "--font-mono",
+	subsets: ["latin"],
+	weight: ["300", "400", "500"],
 });
 
 export const metadata: Metadata = {
-  title: "Jeremiah Taylor | Security Engineer",
-  description: "Security Engineer focused on infrastructure, platform security, and reliable systems in constrained enterprise environments.",
+	title: "Jeremiah Taylor | Security Engineer",
+	description: "Security Engineer focused on infrastructure, platform security, and reliable systems in constrained enterprise environments.",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
-  );
+	return (
+		<html
+			lang="en"
+			className={`${syne.variable} ${dmSans.variable} ${jetbrainsMono.variable} h-full antialiased`}
+		>
+			<body className="min-h-full flex flex-col">{children}</body>
+		</html>
+	);
 }

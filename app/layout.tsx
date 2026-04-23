@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
+import Nav from "@/components/Nav";
 import "./globals.css";
 
 const syne = Syne({
@@ -35,7 +36,10 @@ export default function RootLayout({
 			lang="en"
 			className={`${syne.variable} ${dmSans.variable} ${jetbrainsMono.variable} h-full antialiased`}
 		>
-			<body className="min-h-full flex flex-col">{children}</body>
+			<body className="min-h-full flex flex-col">
+				<Nav />
+				{children}
+			</body>
 		</html>
 	);
 }

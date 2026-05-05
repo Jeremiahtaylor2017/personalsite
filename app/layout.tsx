@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
 import Nav from "@/components/Nav";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const syne = Syne({

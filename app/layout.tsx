@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
 import Nav from "@/components/Nav";
+import Footer from "@/components/footer";
 import "./globals.css";
 
 const syne = Syne({
@@ -39,6 +40,7 @@ export default function RootLayout({
 			<body className="min-h-full flex flex-col">
 				<Nav />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

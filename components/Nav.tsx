@@ -1,33 +1,18 @@
 export default function Nav() {
 	return (
-		<nav style={{
-			position: "sticky",
-			top: 0,
-			zIndex: 200,
-			background: "rgba(13,13,15,0.88)",
-			backdropFilter: "blur(14px) saturate(160%)",
-			borderBottom: "1px solid var(--border)",
-		}}>
-			<div style={{
-				maxWidth: 1040,
-				margin: "0 auto",
-				padding: "0 32px",
-				height: 54,
-				display: "flex",
-				alignItems: "center",
-			}}>
-				<a href="#" style={{
-					fontFamily: "var(--font-display)",
-					fontSize: 15,
-					fontWeight: 700,
-					color: "var(--text)",
-					letterSpacing: "-0.02em",
-					marginRight: "auto",
-				}}>
+		<nav
+			className="sticky top-0 z-[200] border-b border-subtle"
+			style={{ background: "rgba(13,13,15,0.88)", backdropFilter: "blur(14px) saturate(160%)" }}
+		>
+			<div className="max-w-[1040px] mx-auto px-8 h-[54px] flex items-center">
+				<a
+					href="#"
+					className="mr-auto font-display text-[15px] font-bold text-foreground tracking-[-0.02em]"
+				>
 					Jeremiah Taylor
 				</a>
 
-				<ul style={{ display: "flex", gap: 2, listStyle: "none", marginRight: 18 }}>
+				<ul className="hidden sm:flex gap-[2px] list-none mr-[18px]">
 					{[
 						{ label: "Experience", href: "#experience" },
 						{ label: "Work", href: "#work" },
@@ -35,30 +20,23 @@ export default function Nav() {
 						{ label: "GitHub", href: "https://github.com/Jeremiahtaylor2017" },
 					].map(({ label, href }) => (
 						<li key={label}>
-							<a href={href} style={{
-								fontSize: 13,
-								color: "var(--text-2)",
-								padding: "5px 11px",
-								borderRadius: 6,
-								display: "block",
-							}}>
+							<a
+								href={href}
+								className="block text-[13px] text-muted px-[11px] py-[5px] rounded-[6px]"
+							>
 								{label}
 							</a>
 						</li>
 					))}
 				</ul>
 
-				<a href="mailto:jeremiahtaylor2021@gmail.com" style={{
-					fontSize: 13,
-					fontWeight: 500,
-					padding: "6px 16px",
-					borderRadius: 7,
-					background: "var(--text)",
-					color: "var(--bg)",
-				}}>
+				<a
+					href="mailto:jeremiahtaylor2021@gmail.com"
+					className="text-[13px] font-medium px-4 py-[6px] rounded-[7px] bg-foreground text-page whitespace-nowrap"
+				>
 					Get in touch
 				</a>
 			</div>
 		</nav>
-	)
+	);
 }

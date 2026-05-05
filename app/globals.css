@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@source "../app";
+@source "../components";
 
 :root {
 	--bg: #0d0d0f;
@@ -15,23 +17,27 @@
 	--green-dim: rgba(34, 197, 94, 0.08);
 }
 
-@theme inline {
-	--color-bg: var(--bg);
-	--color-bg-alt: var(--bg-alt);
-	--color-bg-card: var(--bg-card);
-	--color-border: var(--border);
-	--color-border-mid: var(--border-mid);
-	--color-text: var(--text);
-	--color-text-2: var(--text-2);
-	--color-text-3: var(--text-3);
-	--color-accent: var(--accent);
-	--color-accent-dim: var(--accent-dim);
-	--color-green: var(--green);
-	--color-green-dim: var(--green-dim);
-	--font-display: var(--font-display);
-	--font-body: var(--font-body);
-	--font-mono: var(--font-mono);
-}
+/* Design token utilities — plain CSS, always included */
+.font-display    { font-family: var(--font-display); }
+.font-body       { font-family: var(--font-body); }
+.font-mono       { font-family: var(--font-mono); }
+
+.text-foreground { color: var(--text); }
+.text-muted      { color: var(--text-2); }
+.text-faint      { color: var(--text-3); }
+.text-page       { color: var(--bg); }
+.text-accent     { color: var(--accent); }
+.text-success    { color: var(--green); }
+
+.bg-page         { background-color: var(--bg); }
+.bg-alt          { background-color: var(--bg-alt); }
+.bg-surface      { background-color: var(--bg-card); }
+.bg-foreground   { background-color: var(--text); }
+.bg-accent-dim   { background-color: var(--accent-dim); }
+.bg-success-dim  { background-color: var(--green-dim); }
+
+.border-subtle   { border-color: var(--border); }
+.border-mid-c    { border-color: var(--border-mid); }
 
 * {
 	box-sizing: border-box;
